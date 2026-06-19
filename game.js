@@ -792,7 +792,7 @@ function startBalanceGame() {
         const tray = document.getElementById('tray-surface').getBoundingClientRect();
         
         // Change 0.03 to 0.015 to make it move half as fast!
-        balanceAngle += 0.001; 
+        balanceAngle += 0.1; 
         
         let centerX = (tray.width / 2) - 50;
         let centerY = (tray.height / 2) - 50;
