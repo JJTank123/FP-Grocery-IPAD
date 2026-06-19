@@ -639,10 +639,6 @@ function beginScavengerHunt() {
     // 2. Start the game and the timer!
     startScavengerGame();
 }
-
-/* ========================================================
-   THE BURGER BUILDER GAME
-======================================================== */
 /* ========================================================
    THE BURGER BUILDER GAME
 ======================================================== */
@@ -789,14 +785,14 @@ function startBalanceGame() {
         if (isBalanceActive) e.preventDefault();
     }, { passive: false });
 
-    // 4. Smooth Movement Engine
+// 4. Smooth Movement Engine
     function moveSmoothly() {
         if (!isBalanceActive) return;
 
         const tray = document.getElementById('tray-surface').getBoundingClientRect();
         
-        // Update the path angle
-        balanceAngle += 0.03; 
+        // Change 0.03 to 0.015 to make it move half as fast!
+        balanceAngle += 0.015; 
         
         let centerX = (tray.width / 2) - 50;
         let centerY = (tray.height / 2) - 50;
@@ -865,9 +861,6 @@ function endBalanceGame(isWin) {
     }
 }
 
-/* ========================================================
-   CHOICE 3 & NAVIGATION
-======================================================== */
 /* ========================================================
    CHOICE 3 & NAVIGATION
 ======================================================== */
