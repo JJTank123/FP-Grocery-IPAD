@@ -12,7 +12,7 @@ function gameAlert(message, nextAction) {
     text.id = "custom-alert-text"; 
     text.innerHTML = message; 
 
-    const btn = document.createElement("button");
+    const btn = document.createElement("button"); 
     btn.id = "custom-alert-btn";
     btn.innerText = "OK";
     
@@ -792,7 +792,7 @@ function startBalanceGame() {
         const tray = document.getElementById('tray-surface').getBoundingClientRect();
         
         // Change 0.03 to 0.015 to make it move half as fast!
-        balanceAngle += 0.015; 
+        balanceAngle += 0.01; 
         
         let centerX = (tray.width / 2) - 50;
         let centerY = (tray.height / 2) - 50;
